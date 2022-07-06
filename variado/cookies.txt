@@ -1,0 +1,37 @@
+## COOKIES ##
+#### CREAR COOKIE ####
+· Crear una cookie para el nombre:
+
+    document.cookie = "username=John Doe";
+    document.cookie = "test1=Hola";
+
+· Crear una cookie con fecha de expiración (duración):
+> Por defecto se elimina cuando cierras el navegador.
+
+    document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC";
+
+
+· Parámetro Path: para indicar a donde pertenece la cookie.
+> Por defecto, indica a la propia pagina
+
+    document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+
+#### LEER UNA COOKIE ####
+
+    let x = document.cookie;
+
+#### ELIMINAR UNA COOKIE ####
+Tan solo tenemos que asignarle otra fecha de expiración y se quita
+
+    document.cookie = "username=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
+
+#### MOSTRAR LAS COOKIES ####
+Muestra todas las que tengas creadas:
+
+    alert(document.cookie);
+
+
+
+
+si le das a rojo guarda una cookie que se llame cookie
+y al cargar la pagina el texto grande h1 en el color del botón
